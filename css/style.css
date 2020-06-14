@@ -1,7 +1,7 @@
 :root {
   --primary-color: #e50914;
 }
-
+/* reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   background-color: #000;
   color: #333;
@@ -31,15 +31,12 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin: 0.5rem 0;
-}
-
+/* main page (showcase) */
 .showcase {
   background: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0,0.9)),url("/img/bg.jpg") no-repeat center center/cover;
   height: 712.594px;
 }
-
+/* showcase top */
 .showcase-top-wrapper {
   margin: 0 auto;
   padding-top: 1.2rem;
@@ -61,8 +58,36 @@ p {
   max-height: 45px;
 }
 
+/* showcase content */
+.showcase-body {
+  height: 612.594px;;
+  padding: 70px 45px;
+  border-bottom: 0.5rem solid #222;
+
+}
+
+.showcase-content {
+  padding:75px 0;
+  max-width: 950px;
+  margin:0 auto;
+  text-align: center;
+  color:#fff;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+/* sign form */
+
+.sign-form {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
 
 
+
+/* auth link styles  */
 .auth-links {
   border-radius: 3px;
   margin-top: 0.5rem;
@@ -75,4 +100,53 @@ p {
   font-size: 1rem;
   height:1.25rem;
   box-sizing: content-box;
+}
+
+/* button styles */
+
+.btn {
+  user-select: none;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: .1px;
+  text-decoration: none;
+  border: 0;
+  display: inline-block;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #e50914;
+  background-image: linear-gradient(to bottom,#e50914,#db0510);
+  box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+.confirm-button {
+  font-size: 1.875rem;
+  min-height: 70px;
+  padding: 0 1em;
+  border-top-left-radius: 0;
+  border-left: 1px solid #333;
+  border-bottom-left-radius: 0;
+  margin: 0!important;
+}
+
+
+/* typhograpy */
+
+.title {
+    font-size:4rem;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+
+.subtitle {
+  max-width: 640px;
+  margin: 1rem auto;
+  font-weight: 400;
+  font-size: inherit;
 }
