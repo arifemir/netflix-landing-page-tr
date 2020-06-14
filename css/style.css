@@ -89,6 +89,7 @@ a {
   position: relative;
 }
 /* sign input */
+
 .sign-input {
   padding: 10px 10px 0;
   width: 100%;
@@ -103,6 +104,7 @@ a {
   color:#000;
   border: none;
 }
+
 
 .sign-input:focus {
   outline: none;
@@ -120,7 +122,7 @@ a {
   transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease;
 }
 
-.sign-input:focus + .place-label  {
+.place-mounter  {
   transform:translateY(-150%);
   font-weight: 500;
   font-size:14px;
