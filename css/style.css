@@ -1,7 +1,4 @@
-:root {
-  --primary-color: #e50914;
-}
-/* reset */
+/* - reset - */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,12 +28,12 @@ a {
   text-decoration: none;
 }
 
-/* main page (showcase) */
+/* - main page (showcase) - */
 .showcase {
   background: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0,0.9)),url("/img/bg.jpg") no-repeat center center/cover;
   height: 712.594px;
 }
-/* showcase top */
+/* - showcase top - */
 .showcase-top-wrapper {
   margin: 0 auto;
   padding-top: 1.2rem;
@@ -58,7 +55,7 @@ a {
   max-height: 45px;
 }
 
-/* showcase content */
+/* - showcase content - */
 .showcase-body {
   height: 612.594px;;
   padding: 70px 45px;
@@ -76,18 +73,60 @@ a {
   font-weight: 400;
 }
 
-/* sign form */
+/* - sign form - */
 
 .sign-form {
   display:flex;
   flex-direction:row;
   align-items:center;
   justify-content:center;
+  flex-wrap: wrap;
 }
 
+/* - form button,input styles - */
 
+.email-container {
+  position: relative;
+}
+/* sign input */
+.sign-input {
+  padding: 10px 10px 0;
+  width: 100%;
+  min-width: 500px;
+  height: 70px!important;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: inherit;
+  color:#000;
+  border: none;
+}
 
-/* auth link styles  */
+.sign-input:focus {
+  outline: none;
+  border: 0.01px solid rgb(4, 142, 255);
+}
+/* placeholder animation */
+
+.place-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #8c8c8c;
+  transform: translateY(-50%);
+  font-size:16px;
+  transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease;
+}
+
+.sign-input:focus + .place-label  {
+  transform:translateY(-150%);
+  font-weight: 500;
+  font-size:14px;
+}
+
+/* - auth link styles  - */
 .auth-links {
   border-radius: 3px;
   margin-top: 0.5rem;
@@ -102,7 +141,7 @@ a {
   box-sizing: content-box;
 }
 
-/* button styles */
+/* - button styles - */
 
 .btn {
   user-select: none;
@@ -135,7 +174,7 @@ a {
 }
 
 
-/* typhograpy */
+/* - typhograpy - */
 
 .title {
     font-size:4rem;
@@ -158,19 +197,4 @@ a {
   margin: 0 auto;
   font-weight: 400;
   margin-top: 10px;
-}
-
-/* label placeholder styles */
-
-.email-container {
-  position: relative;
-}
-
-.sign-input {
-  border:0;
-  border:1px solid rgb(140, 140, 140);
-  padding: 10px 10px 0 10px;
-  height: 70px;
-  width:100%;
-  min-width: 500px;
 }
