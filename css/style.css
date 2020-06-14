@@ -150,3 +150,27 @@ a {
   font-weight: 400;
   font-size: inherit;
 }
+
+.email-form-title {
+  max-width: none;
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* label placeholder styles */
+
+.email-container {
+  position: relative;
+}
+
+.sign-input {
+  border:0;
+  border:1px solid rgb(140, 140, 140);
+  padding: 10px 10px 0 10px;
+  height: 70px;
+  width:100%;
+  min-width: 500px;
+}
