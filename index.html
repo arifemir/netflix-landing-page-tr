@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix - landing</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Showcase -->
-    <header class="showcase">
-      <!-- Header -->
-      <div class="showcase-top-wrapper">
-        <div class="showcase-top">
-          <img src="img/netflix-logo.svg" alt="Netflix" />
-          <a href="#" class="auth-links red-button">Sign in</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix - landing</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Showcase -->
+  <header class="showcase">
+
+    <!-- Header -->
+    <div class="showcase-top-wrapper">
+      <div class="showcase-top">
+        <img src="img/netflix-logo.svg" alt="Netflix" />
+        <a href="#" class="auth-links red-button">Sign in</a>
       </div>
-      <!-- content -->
-      <div class="showcase-body">
-        <div class="showcase-content" >
-          <h1 class="title">Unlimited movies,TV shows, and more.</h1>
-          <h2 class="subtitle">Watch anywhere. Cancel anytime.</h2>
-          <!-- form -->
-          <div class="sign-form">
-            <div class="email-container">
-              <input type="email" class="sign-input" id="id_email" />
-              <label for="id_email" class="place-label">
-                Email address
-              </label>
-            </div >
-            <div class="confirm-container">
-              <button class="btn btn-red confirm-button" type="submit" role="link">
-                <span>TRY 30 DAYS FREE</span>
-                <span class="chevron">
-                  <i class="fas fa-chevron-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-          <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
-        </div >
-      </div>
-    </header>
+    </div>
 
     <!-- content -->
+    <div class="showcase-body">
+      <div class="showcase-content">
+        <h1 class="title">Unlimited movies,TV shows, and more.</h1>
+        <h2 class="subtitle">Watch anywhere. Cancel anytime.</h2>
 
-      <!-- tv -->
+        <!-- form -->
+        <div class="sign-form">
+          <div class="email-container">
+            <input type="email" class="sign-input" id="id_email" />
+            <label for="id_email" class="place-label">
+              Email address
+            </label>
+          </div>
+          <div class="confirm-container">
+            <button class="btn btn-red confirm-button" type="submit" role="link">
+              <span>TRY 30 DAYS FREE</span>
+              <span class="chevron">
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </button>
+          </div>
+        </div>
 
-      <!-- mobile -->
+        <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+      </div>
+    </div>
 
-      <!-- all devices -->
+  </header>
 
-      <!-- Questions -->
+  <!-- content -->
+  <section class="content">
 
-      <!-- form -->
+    <!-- tv -->
+    <section class="content-container-wrapper">
+      <div class="content-container">
 
-    <!-- footer -->
-    <script src="js/main.js"></script>
-  </body>
+        <!-- tv-text -->
+        <div class="content-text">
+          <h1 class="content-title">Televizyonunuzda izleyebilirsiniz.</h1>
+          <h2 class="content-subtitle">Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha
+            fazlasında seyredin.</h2>
+        </div>
+
+        <!-- tv-animation -->
+        <div class="content-img-container">
+          <div class="content-animation-container">
+            <img alt="tv" class="content-img"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+            <div class="tv-animation">
+              <video class="content-video" autoplay="" playsinline="" muted="" loop="">
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- mobile -->
+    <section class="content-container-wrapper">
+      <div class="content-container">
+
+      </div>
+    </section>
+
+    <!-- all devices -->
+    <section class="content-container-wrapper">
+      <div class="content-container">
+        <!-- all-devices-text -->
+        <div class="content-text">
+          <h1 class="content-title">İstediğiniz her yerde izleyin.</h1>
+          <h2 class="content-subtitle">Ekstra ücret ödemeden telefonda, tablette, bilgisayarda, televizyonda sınırsız
+            film ve dizi izleyin.</h2>
+        </div>
+
+        <!-- all-devices-animation -->
+        <div class="content-img-container">
+          <div class="content-animation-container">
+            <img alt="macos" class="content-img"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+            <div class="mac-animation">
+              <video class="content-video" autoplay="" playsinline="" muted="" loop="">
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                  type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="content-container-wrapper">
+      <div>
+
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="content-container-wrapper">
+      <div>
+
+      </div>
+    </section>
+
+  </section>
+
+  <!-- footer -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
