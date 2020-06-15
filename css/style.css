@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   background-color: #000;
   color: #333;
@@ -36,7 +37,8 @@ img {
 
 /* - main page (showcase) - */
 .showcase {
-  background: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0,0.9)),url("/img/bg.jpg") no-repeat center center/cover;
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("/img/bg.jpg") no-repeat center center/cover;
   height: 712.594px;
 }
 /* - showcase top - */
@@ -56,24 +58,24 @@ img {
 }
 
 .showcase-top > img {
-  padding-top:0.5rem;
+  padding-top: 0.5rem;
   max-width: 167px;
   max-height: 45px;
 }
 
 /* - showcase content - */
 .showcase-body {
-  height: 612.594px;;
+  height: 612.594px;
   padding: 70px 45px;
   border-bottom: 0.5rem solid #222;
 }
 
 .showcase-content {
-  padding:75px 0;
+  padding: 75px 0;
   max-width: 950px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
-  color:#fff;
+  color: #fff;
   font-size: 1.625rem;
   font-weight: 400;
 }
@@ -81,10 +83,10 @@ img {
 /* - sign form - */
 
 .sign-form {
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -93,23 +95,23 @@ img {
 .email-container {
   position: relative;
 }
+
 /* sign input */
 
 .sign-input {
   padding: 10px 10px 0;
   width: 100%;
   min-width: 500px;
-  height: 70px!important;
+  height: 70px !important;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
   font-size: 16px;
   font-family: inherit;
-  color:#000;
+  color: #000;
   border: none;
 }
-
 
 .sign-input:focus {
   outline: none;
@@ -123,32 +125,36 @@ img {
   left: 10px;
   color: #8c8c8c;
   transform: translateY(-50%);
-  font-size:16px;
-  transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease;
+  font-size: 16px;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
 }
 
-.place-mounter  {
-  transform:translateY(-150%);
+.place-mounter {
+  transform: translateY(-150%);
   font-weight: 500;
-  font-size:14px;
+  font-size: 14px;
 }
 
 /* - auth link styles  - */
+
 .auth-links {
   border-radius: 3px;
   margin-top: 0.5rem;
 }
+
 .auth-links.red-button {
   background-color: #e50914;
   line-height: normal;
   padding: 7px 17px;
   font-weight: 400;
   font-size: 1rem;
-  height:1.25rem;
+  height: 1.25rem;
   box-sizing: content-box;
 }
 
-/* content */
+/* content containers */
 
 .content-container-wrapper {
   padding: 70px 45px;
@@ -162,12 +168,12 @@ img {
 .content-container {
   max-width: 1100px;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.content-text {
+.content-text-container {
   margin: -5% 0;
   width: 52%;
   height: 100%;
@@ -191,19 +197,19 @@ img {
   overflow: hidden;
 }
 
-.content-img {
+.content-img-relative {
   position: relative;
   z-index: 2;
 }
 
-.content-video {
+.content-video-container {
   width: 100%;
   height: 100%;
   display: inline-block;
   vertical-align: baseline;
   object-fit: contain;
 }
-/* tv-video */
+/* tv animation */
 
 .tv-animation {
   width: 100%;
@@ -213,10 +219,80 @@ img {
   position: absolute;
   top: 46%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-/* all devices video */
+/* mobile-containers */
+
+.mobile-container {
+  max-width: 1100px;
+  max-height: 322.13px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-animation-container {
+  margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* mobile card */
+.mobile-animation-card-box {
+  padding: 0.5em 0.75em;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  min-width: 15em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 2em 0 #000;
+  border-radius: 0.75em;
+}
+
+/* mobile card animation */
+.mobile-animation-card-box::after {
+  content: "";
+  height: 3.75em;
+  width: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  background-size: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.mobile-animation-card-box-image {
+  margin: 0 1em 0 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.mobile-animation-card-box-image > img {
+  height: 4.5em;
+  box-sizing: content-box;
+}
+
+.mobile-animation-card-box-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+
+/* all devices animation */
 
 .mac-animation {
   width: 100%;
@@ -226,7 +302,7 @@ img {
   position: absolute;
   top: 34%;
   left: 50%;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%);
 }
 
 /* - button styles - */
@@ -238,7 +314,7 @@ img {
   vertical-align: middle;
   cursor: pointer;
   font-weight: 400;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   text-decoration: none;
   border: 0;
   display: inline-block;
@@ -247,8 +323,8 @@ img {
 .btn-red {
   color: #fff;
   background-color: #e50914;
-  background-image: linear-gradient(to bottom,#e50914,#db0510);
-  box-shadow: 0 1px 0 rgba(0,0,0,.45);
+  background-image: linear-gradient(to bottom, #e50914, #db0510);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
 }
 
 .confirm-button {
@@ -258,17 +334,16 @@ img {
   border-top-left-radius: 0;
   border-left: 1px solid #333;
   border-bottom-left-radius: 0;
-  margin: 0!important;
+  margin: 0 !important;
 }
-
 
 /* - typhograpy - */
 
 .title {
-    font-size:4rem;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.1;
+  font-size: 4rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.1;
 }
 
 .subtitle {
@@ -290,12 +365,23 @@ img {
 .content-title {
   font-size: 3.125rem;
   line-height: 1.1;
-  margin-bottom: .5rem;
-  margin: 0 0 .4em;
+  margin-bottom: 0.5rem;
+  margin: 0 0 0.4em;
 }
 
 .content-subtitle {
   font-size: 1.625rem;
   font-weight: 400;
-  margin: .75em 0 .25em;
+  margin: 0.75em 0 0.25em;
+}
+
+.text-0 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.text-1 {
+  font-size: 0.9em;
+  color: #0071eb;
+  font-weight: 400;
 }
