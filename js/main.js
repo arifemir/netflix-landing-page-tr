@@ -11,11 +11,12 @@ signInput.addEventListener("focusout",()=>{
 
 const faqQuestion = document.querySelectorAll(".faq-question");
 const plusTimes = document.querySelectorAll(".plus-times");
-
+const faqAnswer = document.querySelectorAll(".faq-answer");
 
 faqQuestion.forEach((faq,i)=>{
   faq.addEventListener("click",()=>{
     plusTimes[i].classList.toggle("plus");
+    faqAnswer[i].classList.toggle("open");
   })
 })
 
