@@ -33,6 +33,7 @@ button {
   cursor:pointer;
   color:inherit;
   outline:none;
+  font: inherit;
 }
 
 img {
@@ -350,7 +351,7 @@ img {
 .faq-question > .plus-times {
   position: absolute;
   right: 1em;
-  top: 50%;
+  top: 45%;
   height: 1em;
   width: 1em;
   transform: translateY(-50%);
@@ -362,15 +363,26 @@ img {
 
 /* faq answer  */
 .faq-list-item >.faq-answer {
-
+  display: block;
+  text-align: left;
+  background: #303030;
 }
 
-.faq-list-item > .close {
-
+.faq-answer > span {
+  display: inline-block;
+  padding: 1.2em;
 }
 
-.faq-list-item > .open {
+.faq-answer.closed {
+  overflow: hidden;
+  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  max-height: 0;
+}
 
+.faq-answer.open {
+  max-height: 1200px;
+  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  overflow: hidden;
 }
 
 /* - button styles - */
