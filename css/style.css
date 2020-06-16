@@ -317,11 +317,15 @@ img {
 }
 /* faq list */
 .faq-list {
-
+  width: 75%;
+  margin: 2em auto;
+  max-width: 815px;
+  padding: 0;
 }
 
 .faq-list > .faq-list-item {
-
+  list-style-type: none;
+  margin: 0 0 8px 0;
 }
 /* faq question */
 .faq-list-item > .faq-question {
