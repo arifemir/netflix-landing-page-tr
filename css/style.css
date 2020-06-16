@@ -310,7 +310,10 @@ img {
 
 /* faq-form container */
 .faq-form-container {
-
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
 }
 /* faq list */
 .faq-list {
