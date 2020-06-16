@@ -30,9 +30,9 @@ a {
 }
 
 button {
-  cursor:pointer;
-  color:inherit;
-  outline:none;
+  cursor: pointer;
+  color: inherit;
+  outline: none;
   font: inherit;
 }
 
@@ -41,6 +41,8 @@ img {
   height: auto;
   border: 0;
 }
+
+/* HEADER */
 
 /* - main page (showcase) - */
 .showcase {
@@ -160,6 +162,8 @@ img {
   box-sizing: content-box;
 }
 
+/* all content partner styles */
+
 /* content containers */
 
 .content-container-wrapper {
@@ -215,6 +219,11 @@ img {
   vertical-align: baseline;
   object-fit: contain;
 }
+
+/* CONTENT */
+
+/* tv styles */
+
 /* tv animation */
 
 .tv-animation {
@@ -227,6 +236,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* mobile styles */
 
 /* mobile-containers */
 
@@ -311,9 +322,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-
-
-/* faq styles*/
+/* Questions styles*/
 
 /* faq-form container */
 .faq-form-container {
@@ -333,11 +342,10 @@ img {
 .faq-list > .faq-list-item {
   list-style-type: none;
   margin: 0 0 8px 0;
-
 }
 /* faq question */
 .faq-list-item > .faq-question {
-  padding: .8em 2.2em .8em 1.2em;
+  padding: 0.8em 2.2em 0.8em 1.2em;
   margin-bottom: 1px;
   font-weight: 400;
   position: relative;
@@ -357,17 +365,17 @@ img {
   transform: translateY(-50%);
 }
 
-.faq-question > .plus  {
+.faq-question > .plus {
   transform: translateY(-50%) rotate(-45deg);
 }
 
 /* faq answer  */
-.faq-list-item >.faq-answer {
+.faq-list-item > .faq-answer {
   display: block;
   text-align: left;
   background: #303030;
   overflow: hidden;
-  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
   max-height: 0;
 }
 
@@ -378,15 +386,15 @@ img {
 
 .faq-answer.open {
   max-height: 1200px;
-  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
   overflow: hidden;
 }
 
 /* .faq-form-container */
-.from-section-container {
-  margin : 0 auto;
+.form-section-container {
+  margin: 0 auto;
   max-width: 950px;
-  padding-top: .85rem;
+  padding-top: 0.85rem;
   display: flex;
   flex-flow: column-reverse;
   font-size: 1.625rem;
@@ -394,6 +402,10 @@ img {
   text-align: center;
   color: #fff;
 }
+
+/* FOOTER */
+
+
 
 /* - button styles - */
 
@@ -478,14 +490,11 @@ img {
 
 /* media queies */
 
-@media only screen and (max-width:1449px) and (min-width:950px) {
-
+@media only screen and (max-width: 1449px) and (min-width: 950px) {
 }
 
-@media only screen and (max-width:949px) and (min-width:550px) {
-
+@media only screen and (max-width: 949px) and (min-width: 550px) {
 }
 
-@media only screen and (max-width:549px) and (min-width:400px) {
-
+@media only screen and (max-width: 549px) and (min-width: 400px) {
 }

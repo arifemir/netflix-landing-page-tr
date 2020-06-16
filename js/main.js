@@ -8,7 +8,6 @@ signInput.forEach((el,i)=>{
 })
 
 signInput.forEach((el,i)=>{
-  console.log(el);
   el.addEventListener("focusout", () => {
     (el.value === "") && placeLabel[i].classList.remove("place-mounter");
   });
