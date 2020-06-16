@@ -29,6 +29,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor:pointer;
+  color:inherit;
+  outline:none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -326,6 +332,7 @@ img {
 .faq-list > .faq-list-item {
   list-style-type: none;
   margin: 0 0 8px 0;
+
 }
 /* faq question */
 .faq-list-item > .faq-question {
@@ -338,8 +345,6 @@ img {
   display: block;
   text-align: left;
   background: #303030;
-  cursor: pointer;
-  overflow: visible;
 }
 
 .faq-question > .plus-times {
