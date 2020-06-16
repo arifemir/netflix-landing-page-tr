@@ -1,12 +1,17 @@
-const signInput = document.querySelector(".sign-input");
-const placeLabel = document.querySelector(".place-label");
+const signInput = document.querySelectorAll(".sign-input");
+const placeLabel = document.querySelectorAll(".place-label");
 
-signInput.addEventListener("focusin", () => {
-  placeLabel.classList.add("place-mounter");
-});
+signInput.forEach((el,i)=>{
+  el.addEventListener("focusin", () => {
+    placeLabel[i].classList.add("place-mounter");
+  });
+})
 
-signInput.addEventListener("focusout",()=>{
-  (signInput.value === "") && placeLabel.classList.remove("place-mounter");
+signInput.forEach((el,i)=>{
+  console.log(el);
+  el.addEventListener("focusout", () => {
+    (el.value === "") && placeLabel[i].classList.remove("place-mounter");
+  });
 })
 
 const faqQuestion = document.querySelectorAll(".faq-question");

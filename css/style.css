@@ -366,6 +366,9 @@ img {
   display: block;
   text-align: left;
   background: #303030;
+  overflow: hidden;
+  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  max-height: 0;
 }
 
 .faq-answer > span {
@@ -373,16 +376,23 @@ img {
   padding: 1.2em;
 }
 
-.faq-answer.closed {
-  overflow: hidden;
-  transition: max-height .25s cubic-bezier(.5,0,.1,1);
-  max-height: 0;
-}
-
 .faq-answer.open {
   max-height: 1200px;
   transition: max-height .25s cubic-bezier(.5,0,.1,1);
   overflow: hidden;
+}
+
+/* .faq-form-container */
+.from-section-container {
+  margin : 0 auto;
+  max-width: 950px;
+  padding-top: .85rem;
+  display: flex;
+  flex-flow: column-reverse;
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
 }
 
 /* - button styles - */
