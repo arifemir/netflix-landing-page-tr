@@ -41,6 +41,7 @@ img {
     url("/img/bg.jpg") no-repeat center center/cover;
   height: 712.594px;
 }
+
 /* - showcase top - */
 .showcase-top-wrapper {
   margin: 0 auto;
@@ -96,7 +97,7 @@ img {
   position: relative;
 }
 
-/* sign input */
+/* form input styles */
 
 .sign-input {
   padding: 10px 10px 0;
@@ -117,7 +118,7 @@ img {
   outline: none;
   border: 0.01px solid rgb(4, 142, 255);
 }
-/* placeholder animation */
+/* form input placeholder animation */
 
 .place-label {
   position: absolute;
@@ -126,9 +127,7 @@ img {
   color: #8c8c8c;
   transform: translateY(-50%);
   font-size: 16px;
-  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
-    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
-    -o-transform 0.1s ease;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
 }
 
 .place-mounter {
@@ -137,7 +136,7 @@ img {
   font-size: 14px;
 }
 
-/* - auth link styles  - */
+/* - header auth-links  - */
 
 .auth-links {
   border-radius: 3px;
@@ -303,6 +302,43 @@ img {
   top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+
+/* faq styles*/
+
+/* faq-form container */
+.faq-form-container {
+
+}
+/* faq list */
+.faq-list {
+
+}
+
+.faq-list > .faq-list-item {
+
+}
+/* faq question */
+.faq-list-item > .faq-question {
+
+}
+
+.faq-question > .plus {
+
+}
+/* faq answer  */
+.faq-list-item >.faq-answer {
+
+}
+
+.faq-list-item > .close {
+
+}
+
+.faq-list-item > .open {
+
 }
 
 /* - button styles - */
