@@ -9,3 +9,9 @@ signInput.addEventListener("focusout",()=>{
   (signInput.value === "") && placeLabel.classList.remove("place-mounter");
 })
 
+const faqQuestion = document.querySelector(".faq-question");
+const plusTimes = document.querySelector(".plus-times");
+
+faqQuestion.addEventListener("click", () => {
+  plusTimes.classList.toggle('plus');
+})
